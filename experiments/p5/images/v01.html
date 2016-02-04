@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+    <style>
+
+        .fullWidth {
+            width: 100%;
+        }
+        .logo {
+            margin-top: 80px;
+            height: 100px;
+        }
+        #main {
+            border: 2px solid gray;
+        }
+        .first {
+            margin-top: 50px;
+        }
+        .bottom {
+            margin-top: 30px;
+        }
+
+    </style>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.21/p5.min.js" charset="utf-8"></script>
+
+    <div id="vis"></div>
+
+
+<script>
+
+    var img;
+
+    function preload() {
+        img = loadImage("../booksRead2015/amsterdam.jpg");
+    }
+
+    function setup() {
+        createCanvas(600, 600);
+    }
+
+    function draw() {
+        image(img, 0, 0);
+    }
+
+</script>
